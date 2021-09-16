@@ -1,13 +1,15 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Card from './Card';
+// import App from './App';
+import 'tachyons';
 import reportWebVitals from './reportWebVitals';
+import {robots} from './robots';
+import CardList from './CardList';
+ReactDOM.render(<CardList robots={robots}/> ,
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
   document.getElementById('root')
 );
 
